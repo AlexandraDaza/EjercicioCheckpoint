@@ -16,10 +16,21 @@ const concesionaria = {
     const auto = this.buscarAuto(patente);
     if (auto) {
       auto.vendido = true;
-    
-    
-      console.log (venderAuto("APL123"))}
     }
-}
-
-
+},
+     autosParaLaVenta: function autosParaLaVenta(){ 
+       let autosALaVenta = this.autos.filter(function(objeto){
+     return objeto.vendido ==
+     false
+   })
+  return autosALaVenta
+     }
+    },
+    autosNuevos:function autoNuevo=> {
+      let autosALaVenta = this.autosParaLaVenta()
+      let autosNuevos = autosALaVenta.filter(function(objeto){
+          return objeto.km < 100
+      })
+      return autosNuevos;
+    }
+  },
