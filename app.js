@@ -61,14 +61,4 @@ const concesionaria = {
 }
 }
 console.log(concesionaria.totalDeVentas())
-  /*
-  for (i = 0; i < ventas.length; i++){
   
-  autosNuevos: function autosOKM(){
-    let auto = this.autosParaLaVenta(),
-    (function (objeto){
-      objeto.km < 100
-    return autosNuevos
-  console.log (concesionaria.autosNuevos('JJK116')
-{
-  */
